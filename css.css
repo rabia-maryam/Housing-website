@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    position: relative;
+    display:flex;
+    max-width:100%;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: rgba(26, 24, 24, 0.548);
+}
+.navlogo{
+    margin:0px 2%;
+}
+.navlogo h1{
+    /* position: sticky; */
+    color:white;
+    font-weight: 100;
+    cursor: pointer;
+    
+}
+nav::before{
+content:"";
+background-color: rgba(26, 24, 24, 0.432);
+z-index: -1;
+position: absolute;
+width:100%;
+height: 100%;
+}
+.navitems ul{
+    display: flex;
+}
+.navitems li{
+    font-weight: 600;
+    list-style: none;
+    margin:7px 6px;
+    margin-right: 2.5rem;
+    padding:3px 5px;
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+}
+.navitems li a{
+    text-decoration: none;
+    color:white;
+}
+.navitems li:hover{
+    border-left:1px solid  rgb(255, 255, 255);
+    border-right:1px solid rgba(255, 255, 255, 0.767);
+}
+/* @media (max-width: 427px){
+    .nav{
+        color:red;
+    }
+    .navitems li{
+        margin-right: 1.5rem;
+    }
+} */
+.lowerheader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative ;
+    height: 500px;
+}
+.lowerheader::before{
+    content:"";
+    background-image: url(images/breno-assis-r3WAWU5Fi5Q-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.7;
+    border-bottom: 1px solid black;
+}
+.lowerheader h1{
+   color:rgb(15, 15, 15);
+    padding: 1rem;
+}
+.lowerheader p{
+    color:black;
+    width:45%;
+    padding: 1rem;
+    font-weight: 200;
+    font-weight: 600;
+}
+.btn{
+    color:white;
+    background-color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 19px;
+    margin:0.5rem;
+    
+}
+.btn:hover{
+    padding: 0.5rem 1.5rem; 
+    transform:translateY(-3PX);
+}
+.slide1{
+    display:flex;
+    margin-top: 4px;
+}
+#slide11{
+    height: 400px;
+    width:50vw;   
+    display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+#slide11 img{
+    height: 350px;
+    width: 80%;
+    margin: 5px;
+    mix-blend-mode: multiply;
+}
+#slide12{
+    height: 400px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.slide2{
+    display:flex;
+    margin-top: 4px; 
+}
+#slide21{
+    padding: 6px 30px;
+    height: 400px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#slide22{
+    height: 400px;
+    width:50vw;   
+    display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+#slide22 img{
+    height: 350px;
+    width: 80%;
+    margin: 5px;   
+}
+.slide3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background-color: rgba(168, 168, 168, 0.315);
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.main-heading{
+    font-style: italic;
+    padding: 6px;
+}
+.textbox{
+    background-color:transparent;
+    color:rgba(0, 0, 0, 0.781);
+    border: 1px black solid;
+    border-radius: 7px;
+    padding: 3px 2px;
+    align-content: center;
+    width: 60%;
+}
+.slide4{
+    margin: 1rem 3rem;
+    padding:2rem;
+    /* border:1px solid gray; */
+    background-image:url(images/mihai-moisa-2sUuUZQD8RQ-unsplash.jpg);
+    background-size: cover;
+    border-radius: 20px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+    border-top:1px solid gray ;
+    margin-top: 2rem;
+}
+footer ul{
+    margin: 15px;
+}
+footer ul li{
+    display: inline-block;   
+}
+footer li img{
+  width: 30px;
+  height: 30px;
+}
